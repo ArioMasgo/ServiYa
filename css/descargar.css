@@ -1,0 +1,55 @@
+/* CSS */
+.descargarapk {
+  text-align: center;
+  padding: 2em;
+}
+
+.descargarapk h2 {
+  font-size: 3em;
+  margin-bottom: 1em;
+  animation: fadeIn 2s;
+  color: #0355cc;
+}
+
+.descargarapk .textoimportante {
+  font-size: 1.2em;
+  text-align: justify;
+  margin-bottom: 2em;
+  animation: fadeIn 2s;
+}
+
+.descargarapk a {
+  display: inline-block;
+  animation: bounce 2s infinite;
+}
+
+.descargarapk a img {
+  width: 200px;
+  height: auto;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+/* Media Queries para hacer el diseño responsivo */
+@media (max-width: 600px) {
+  .descargarapk h2 {
+    font-size: 1.5em;
+  }
+
+  .descargarapk .textoimportante {
+    font-size: 1em;
+  }
+
+  .descargarapk a img {
+    width: 150px;
+  }
+}
