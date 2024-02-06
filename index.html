@@ -42,12 +42,10 @@
             <nav class="navbar navbar-expand-lg custom_nav-container">
               <a class="navbar-brand" href="index.html">
                 <!-- BEGIN: ed8c6549bwf9 -->
-                <a class="navbar-brand" href="index.html">
-                  <img
-                    src="/images/logoserviya-removebg-preview.png"
-                    alt="Logo de ServiYa"
-                  />
-                </a>
+                <img
+                  src="/images/logoserviya-removebg-preview.png"
+                  alt="Logo de ServiYa"
+                />
                 <!-- END: ed8c6549bwf9 -->
               </a>
 
@@ -103,7 +101,7 @@
                   experto? ¿O tal vez un diseñador gráfico creativo? ¡No busques
                   más! ServiYa está aquí para ayudarte.
                 </p>
-                <a href=""> Solicita Aquí</a>
+                <a href="service.html"> Solicita Aquí</a>
               </div>
             </div>
             <div class="col-md-6">
@@ -601,6 +599,30 @@
       </div>
     </footer>
     <!-- footer section -->
+
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyBquv2hFNNazeqHC3xMZS-12PO917P1zq4",
+        authDomain: "serviya-1ebc9.firebaseapp.com",
+        projectId: "serviya-1ebc9",
+        storageBucket: "serviya-1ebc9.appspot.com",
+        messagingSenderId: "239394698663",
+        appId: "1:239394698663:web:d385c871d26e05579ff282",
+        measurementId: "G-L98CJ03R78",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
 
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.js"></script>
